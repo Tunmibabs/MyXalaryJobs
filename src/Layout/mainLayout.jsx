@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../components/footer";
 import Header from "../components/Header";
-import TitleSearch from "../components/titleSearch";
+import JobDisplay from "../components/jobDisplay";
 
 function MainLayout() {
   return (
     <div className="app-wrapper">
       <Header />
-      <TitleSearch />
+      <JobDisplay />
       <Footer />
     </div>
   );

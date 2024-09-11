@@ -12,7 +12,7 @@ function TitleSearch() {
           <option value="200">200</option>
         </select>
 
-        <select name="" id="">
+        <select name="" id="allDropdown">
           <option value="">All</option>
           <option value="">Recent</option>
         </select>
@@ -27,10 +27,8 @@ function TitleSearch() {
         </select>
       </div>
 
-      <div className="filter-btn">
-        <Buttons className="filter-jobs">Filter Jobs</Buttons>
-        <Buttons className="reset-filter">Reset Filter</Buttons>
-      </div>
+      <Buttons className="filter-jobs">Filter Jobs</Buttons>
+      <Buttons className="reset-filter">Reset Filter</Buttons>
     </nav>
   );
 }
