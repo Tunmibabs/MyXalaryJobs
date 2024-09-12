@@ -1,6 +1,8 @@
 import React from "react";
 import Cardpp from "../assets/jobspp.png";
 import mapPin from "../assets/map-pin.svg"
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function JobListCard() {
   return (
@@ -14,8 +16,10 @@ function JobListCard() {
         <p>ATB TECH</p>
 
         <div className="jobloc">
-            <span><p><img src={mapPin}/>Lagos, Nigeria</p></span>
-            <span><p>₦1,000,000.00</p></span>
+            <span>
+              <FontAwesomeIcon icon={faLocationDot} id="locIcon"/>
+              Lagos, Nigeria</span>
+            <span>₦1,000,000.00</span>
         </div>
       </div>
     </section>

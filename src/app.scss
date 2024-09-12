@@ -196,14 +196,15 @@ button {
 
 // ------JOBLIST-------
 .jobList {
+    scrollbar-width: 10px;
   display: flex;
   justify-content: center;
   width: Fixed(304px);
   height: Hug(115px);
   top: 56311px;
   left: -2539px;
-  border: 1px solid #5e587380;
-  // border: 0px 0px 1px 0px;
+  border: 0px 0px 1px 0px;
+  border-bottom: 1px solid #5e587380;
   padding: 20px;
   gap: 8px;
 }
@@ -213,11 +214,11 @@ button {
   height: 40px;
   border-radius: 32px;
 }
-.jobInfo{
-    display: flex;
-    flex-direction: column;
-    width: 208px;
-    height: 75px;
+.jobInfo {
+  display: flex;
+  flex-direction: column;
+  width: 208px;
+  height: 75px;
 }
 .jobInfo h3 {
   font-family: Poppins;
@@ -236,7 +237,7 @@ button {
   color: #5e5873;
 }
 .jobloc {
-    margin-top: 16px;
+  margin-top: 16px;
   display: flex;
   width: 180px;
   height: Hug(23px);
@@ -244,44 +245,41 @@ button {
 }
 .jobloc span {
   display: flex;
-  width: 100px;
-  height: Hug(23px);
+  width: 90px;
+  height: 15px;
   border-radius: 4px;
-  padding: 4px 5px 4px 5px;
-  gap: 3px;
+  padding: 3px 2px 4px 5px;
+  gap: 2px;
   background: #f7d3ea;
   overflow-y: hidden;
-}
-.jobloc img {
-  width: 9px;
-  height: 11px;
-  top: 0.5px;
-  left: 1.5px;
-}
-.jobloc p {
-  width: 70px;
-  height: 15px;
   font-family: Poppins;
   font-size: 10px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 15px;
   text-align: left;
   color: #d62196;
 }
+#locIcon {
+  width: 8px;
+  height: 8px;
+  top: 0.5px;
+  margin-top: 3.5px;
+}
+
 // -----JOB DISPLAY-----
-.jobDisplay{
-    width: 1240px;
-    height: 1116px;
+.jobDisplay {
+  width: 1240px;
+  height: 1116px;
 }
-.side-bar{
-    max-width: Hug(304px);
-    margin-left: 1%;
-    width: 30%;
-    height: Fixed(1040px);
-    border: 0px 0px 1px 0px;
-    overflow: auto;
+.side-bar {
+  max-width: Hug(304px);
+  margin-left: 1%;
+  width: 30%;
+  height: Fixed(1040px);
+  border: 0px 0px 1px 0px;
+  overflow: auto;
 }
-.side-bar ul{
-    display: flex;
-    flex-direction: column;
+.side-bar ul {
+  display: flex;
+  flex-direction: column;
 }
