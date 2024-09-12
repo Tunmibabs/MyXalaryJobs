@@ -14,6 +14,11 @@ function Sidebar() {
         <li><JobListCard /></li>
         <li><JobListCard /></li>
         <li><JobListCard /></li>
+        <li><JobListCard /></li>
+        <li><JobListCard /></li>
+        <li><JobListCard /></li>
+        <li><JobListCard /></li>
+        <li><JobListCard /></li>
       </ul>
     </aside>
   )

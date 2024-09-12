@@ -69,7 +69,7 @@ button {
 // ------SEARCH FILTER------
 .searchFilter {
   display: flex;
-  max-width: 1280px;
+  max-width: 1200px;
   width: 94%;
   height: Fixed(38px);
   justify-content: space-between;
@@ -77,7 +77,7 @@ button {
   overflow-y: hidden;
   top: 20px;
   padding: 0px 21px 0px 21px;
-  gap: 23px;
+  gap: 2px;
   padding-bottom: 2px;
 }
 .filters {
@@ -168,6 +168,7 @@ button {
   color: #ffffff;
   background: #440f7c;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .copyright {
   width: Hug(212px);
@@ -196,7 +197,7 @@ button {
 
 // ------JOBLIST-------
 .jobList {
-    scrollbar-width: 10px;
+  scrollbar-width: 10px;
   display: flex;
   justify-content: center;
   width: Fixed(304px);
@@ -270,16 +271,92 @@ button {
 .jobDisplay {
   width: 1240px;
   height: 1116px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 .side-bar {
   max-width: Hug(304px);
-  margin-left: 1%;
-  width: 30%;
+  margin-left: 1.5%;
+  width: 31%;
   height: Fixed(1040px);
   border: 0px 0px 1px 0px;
-  overflow: auto;
 }
 .side-bar ul {
   display: flex;
   flex-direction: column;
+}
+.displayJobs {
+  display: flex;
+  margin-top: 2%;
+  max-width: Fill(1200px);
+  width: 98%;
+  height: 1045px;
+  top: 25px;
+  left: 10px;
+}
+
+// -----JOBCARD--------
+.jobDetails {
+  display: flex;
+  flex-direction: column;
+  width: 775px;
+  padding-top: 10px;
+  gap: 32px;
+}
+.apply-btn {
+  width: Hug(127px);
+  height: Hug(40px);
+  border-radius: 5px;
+  padding: 8px 40px 8px 40px;
+  gap: 10px;
+  background: #440f7c;
+  color: #ffffff;
+}
+.jobCardHeader{
+  padding-left: 17px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #5E587380
+}
+.jobCardTitle {
+  display: flex;
+  width: 759px;
+  height: Hug(40px);
+  justify-content: space-between;
+}
+.jobCardTitle h2 {
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 39px;
+  text-align: left;
+  color: #5e5873;
+}
+
+.cardText {
+  margin-top: 20px;
+  position: relative;
+  width: 773px;
+  height: Hug(21px);
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #5e5873;
+}
+.cardText h4 {
+  width: 391px;
+  height: 21px;  
+}
+.cardText h6 {
+  width: 181px;
+  height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #5e5873;
 }
