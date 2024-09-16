@@ -18,10 +18,12 @@
 button {
   border: none;
   cursor: pointer;
+  color: #440F7C;
 }
 
 // ---------HEADER------
-.header-loggedout, .header-loggedin{
+.header-loggedout,
+.header-loggedin {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -40,7 +42,8 @@ button {
   gap: 10px;
   margin-left: 94px;
 }
-.loggedInNav ul, .loggedinLinks ul {
+.loggedInNav ul,
+.loggedinLinks ul {
   display: flex;
   width: 600px;
   height: Hug(44px);
@@ -60,6 +63,7 @@ figcaption {
   font-weight: 500;
   font-size: 14px;
   text-align: right;
+  line-height: 21px;
   padding-top: 8px;
   color: #6e6b7b;
 }
@@ -120,7 +124,7 @@ figcaption {
   display: flex;
   justify-content: space-between;
 }
-.navLoggedin{
+.navLoggedin {
   max-width: 1240px;
   height: 40px;
   display: flex;
@@ -129,13 +133,13 @@ figcaption {
 }
 .loggedInNav .loggedinLinks {
   display: flex;
-  width: 738px;
+  width: 818px;
   height: 30px;
   gap: 16px;
   padding: 0px;
   overflow: hidden;
 }
-.loggedinLinks ul{
+.loggedinLinks ul {
   display: flex;
   justify-content: space-between;
   gap: 2px;
@@ -144,29 +148,25 @@ figcaption {
   font-size: 12px;
   overflow: hidden;
 }
-#a{
-cursor: pointer;
-width: 50px;
-height: 44px;
-padding: 10px 4px 10px 4px;
+#a {
+  width: 50px;
+  height: 44px;
+  padding: 10px 4px;
 }
-#b{
-  cursor: pointer;
+#b {
   width: 110px;
   height: 44px;
-  padding: 10px 4px 10px 4px;
+  padding: 10px 4px;
 }
-#c{
-  cursor: pointer;
+#c {
   height: 91px;
   height: 44px;
-  padding: 10px 4px 10px 4px;
+  padding: 10px 4px;
 }
-#d{
-  cursor: pointer;
+#d {
   width: 93px;
   height: 44px;
-  padding: 10px 4px 10px 4px;
+  padding: 10px 4px;
 }
 .profileBtn {
   width: 130px;
@@ -175,7 +175,26 @@ padding: 10px 4px 10px 4px;
   padding: 8px;
   gap: 10px;
   background: #fc09091a;
-  color: #FC0909;
+  color: #fc0909;
+  font-weight: 500;
+}
+.appProfileBtn {
+  width: 144px;
+  height: 37px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #3aa14e1a;
+  margin-left: 170px;
+  color: #0B6B1D;
+  font-weight: 500;
+}
+.applied-btn{
+  width: 142px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 8px 40px;
+  background: #DACFE5;
+  font-size: 16px;
   font-weight: 500;
 }
 .completePBtn {
@@ -188,16 +207,22 @@ padding: 10px 4px 10px 4px;
   color: #ffffff;
   margin-right: 12px;
 }
-.navRight{
+.navRight {
   display: flex;
   justify-content: space-between;
   margin-left: 10px;
   height: 34px;
   padding: 0;
   margin-left: 18px;
-  color: #5E5873;
+  color: #5e5873;
 }
-.navLeft{
+.navRight a {
+  text-decoration: none;
+}
+.navRight a:active {
+  border-bottom: 2px solid #d62196 color(#d62196);
+}
+.navLeft {
   display: flex;
   justify-content: space-between;
   width: 900px;
@@ -337,7 +362,9 @@ padding: 10px 4px 10px 4px;
   height: 18px;
   margin-left: 9px;
 }
-
+.activelink {
+  text-decoration: none;
+}
 // ------JOBLIST-------
 .jobList {
   scrollbar-width: 10px;
@@ -413,7 +440,7 @@ padding: 10px 4px 10px 4px;
 // -----JOB DISPLAY-----
 .jobDisplay {
   width: 1340px;
-  height: 1116px;
+  height: 690px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -434,7 +461,7 @@ padding: 10px 4px 10px 4px;
   margin-top: 2%;
   max-width: Fill(1440px);
   width: 100%;
-  height: 1045px;
+  height: 100%;
   top: 25px;
   left: 10px;
 }

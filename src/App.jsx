@@ -1,4 +1,5 @@
 import "./app.scss";
+import AppliedJobs from "./Layout/appliedJobs";
 import LoggedInPage from "./Layout/loggedInPage";
 import MainLayout from "./Layout/mainLayout";
 import {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/logged',
     element: <LoggedInPage />
+  },
+  {
+    path: '/appliedJobs',
+    element: <AppliedJobs />
   }
 ]
 );

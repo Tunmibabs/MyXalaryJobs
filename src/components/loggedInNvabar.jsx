@@ -1,7 +1,15 @@
 import React from "react";
 import Buttons from "./buttons";
 import ProfileImg from "../assets/Status.png";
-import { FaRegBookmark, FaBook, FaRegClock, FaRegCheckCircle } from "react-icons/fa";
+import {
+  FaRegBookmark,
+  FaBook,
+  FaRegClock,
+  FaRegCheckCircle,
+} from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+
+
 
 function LoggedInNvabar() {
   return (
@@ -9,24 +17,41 @@ function LoggedInNvabar() {
       <nav className="loggedinLinks">
         <ul className="navRight">
           <li id="a">
-            <FaRegCheckCircle />
-            Jobs</li>
-          <li id="b">
-            <FaRegClock />
-            My Application
+            <NavLink
+              to="/logged"
+              className={({isActive}) => (isActive ? `{styles.active}` : '')}
+            >
+              <FaRegCheckCircle />
+              Jobs
+            </NavLink>
           </li>
+
+          <li id="b">
+            <NavLink to='/appliedJobs'>
+              <FaRegClock />
+              My Application
+            </NavLink>
+          </li>
+
           <li id="c">
-            <FaBook />
-            My Offers</li>
+            <NavLink to='/class'>
+              <FaBook />
+              My Offers
+            </NavLink>
+          </li>
+
           <li id="d">
-            <FaRegBookmark />
-            My Profile</li>
+            <NavLink to='/kill'>
+              <FaRegBookmark />
+              My Profile
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <nav className="navLeft">
         <Buttons className="profileBtn">Profile Score:0%</Buttons>
         <Buttons className="completePBtn">Complete your Profile</Buttons>
-
+        {/* <Buttons className="appProfileBtn">Profile Score:100%</Buttons> */}
         <figure>
           <figcaption>Jane Jes</figcaption>
           <img src={ProfileImg} alt="" className="figImg" />
