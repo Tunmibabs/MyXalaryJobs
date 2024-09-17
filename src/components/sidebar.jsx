@@ -4,22 +4,7 @@ import JobListCard from './jobListCard'
 function Sidebar() {
   return (
     <aside className='side-bar'>
-      <ul>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-        <li><JobListCard /></li>
-      </ul>
+      <JobListCard />
     </aside>
   )
 }
