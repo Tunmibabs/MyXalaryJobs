@@ -119,13 +119,13 @@ figcaption {
   margin-left: 10px;
 }
 .loggedInNav {
-  max-width: 1240px;
+  width: 100%;
   height: 39px;
   display: flex;
   justify-content: space-between;
 }
 .navLoggedin {
-  max-width: 1240px;
+  width: 100%;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -133,39 +133,19 @@ figcaption {
 }
 .loggedInNav .loggedinLinks {
   display: flex;
-  width: 818px;
+  // width: 818px;
   height: 30px;
-  gap: 16px;
   padding: 0px;
   overflow: hidden;
 }
 .loggedinLinks ul {
   display: flex;
   justify-content: space-between;
-  gap: 2px;
-  width: 600px;
+  gap: 21px;
+  width: 100%;
   height: 40px;
   font-size: 12px;
   overflow: hidden;
-}
-#a {
-  width: 50px;
-  height: 44px;
-  padding: 10px 4px;
-}
-#b {
-  width: 110px;
-  height: 44px;
-  padding: 10px 4px;
-}
-#c {
-  height: 91px;
-  height: 44px;
-  padding: 10px 4px;
-}
-#d {
-  width: 93px;
-  height: 44px;
   padding: 10px 4px;
 }
 .profileBtn {
@@ -210,81 +190,64 @@ figcaption {
 .navRight {
   display: flex;
   justify-content: space-between;
-  margin-left: 10px;
+  width: 100%;
   height: 34px;
-  padding: 0;
-  margin-left: 18px;
   color: #5e5873;
 }
 .navRight a {
   text-decoration: none;
 }
-.navRight a:active {
-  border-bottom: 2px solid #d62196 color(#d62196);
+.activeLink{
+  text-decoration: none;
+  border-bottom: 2px solid #D62196;
+  color: #D62196;
 }
 .navLeft {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 40%;
   font-size: 14px;
   line-height: 21px;
-  text-align: left;
-  padding-left: 250px;
-  margin-right: 7px;
 }
 
 // ------SEARCH FILTER------
 .searchFilter {
   display: flex;
-  max-width: 1247px;
   width: 100%;
   height: Fixed(38px);
   justify-content: space-between;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  top: 20px;
-  padding: 0px 21px 0px 21px;
-  gap: 21px;
-  padding-bottom: 2px;
 }
 .filters {
   display: flex;
-  width: 900px;
   height: 60px;
-  gap: 9px;
-  margin-left: 60px;
+  gap: 29px;
   justify-content: space-between;
-  // border: 1px solid black;
+  font-size: 12px;
+  line-height: 18px;
 }
 #numberDropdown {
-  width: 70px;
+  width: 8%;
   height: 38px;
   border: 1px solid #5e587380;
   padding: 10px;
   justify-content: space-between;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 18px;
 }
 #allDropdown {
-  width: 90px;
+  width: 10%;
   height: 38px;
   justify-content: space-between;
   padding: 10px;
   border: 1px solid #5e587380;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 18px;
 }
 #timeDropdown {
   border: 1px solid #5e587380;
-  width: 115px;
+  width: 16%;
   height: 38px;
   border-radius: 8px;
   justify-content: space-between;
   padding: 6px;
-  font-size: 12px;
-  line-height: 18px;
 }
 #roleDropdown {
   width: 515px;
@@ -293,8 +256,11 @@ figcaption {
   gap: 10px;
   border-radius: 8px;
   border: 1px solid #5e587380;
-  font-size: 12px;
-  line-height: 18px;
+}
+.filter-btn{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 .reset-filter {
   width: 85px;
@@ -302,11 +268,6 @@ figcaption {
   padding: 4px;
   border: 1px solid #440f7c;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 18px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  // margin-right: 18px;
 }
 .filter-jobs {
   width: 120px;
@@ -314,11 +275,6 @@ figcaption {
   border: 1px solid #440f7c;
   background: #dacfe5;
   border-radius: 8px;
-  padding: 10px 22px 10px 22px;
-  font-size: 12px;
-  line-height: 18px;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 // -----FOOTER-----
 .footer {
@@ -363,36 +319,28 @@ figcaption {
   height: 18px;
   margin-left: 9px;
 }
-.activelink {
-  text-decoration: none;
-}
+
 // ------JOBLIST-------
 .jobList {
-  // scrollbar-width: 10px;
   display: flex;
-  justify-content: center;
-  width: Fixed(304px);
-  height: Hug(115px);
-  padding: 18px;
-  gap: 8px;
+  width: 100%;
+  padding-top: 3%;
 }
 .jobList a{
   display: flex;
   gap: 12px;
   text-decoration: none;
-  margin-bottom: 10px;
+  padding-bottom: 2%;
+  margin-bottom: 10%;
   border-bottom: 1px solid #5E587380
 }
 .cardpp img {
-  width: 40px;
   height: 40px;
   border-radius: 32px;
 }
 .jobInfo {
   display: flex;
   flex-direction: column;
-  width: 208px;
-  height: 75px;
   margin-bottom: 10px;
 }
 .jobInfo h3 {
@@ -414,13 +362,11 @@ figcaption {
 .jobloc {
   margin-top: 16px;
   display: flex;
-  width: 180px;
   height: Hug(23px);
   gap: 5px;
 }
 .jobloc span {
   display: flex;
-  width: 90px;
   height: 15px;
   border-radius: 4px;
   padding: 3px 2px 4px 5px;
@@ -443,35 +389,26 @@ figcaption {
 
 // -----JOB DISPLAY-----
 .jobDisplay {
-  max-width: 1440px;
+  width: 100%;
   height: 690px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 .side-bar {
-  max-width: 354px;
-  width: 50%;
-  height: Fixed(1040px);
-  padding: 0;
-  margin-left: 61px;
+  width: 28%;
 }
 .displayJobs {
   display: flex;
-  margin-top: 2%;
-  max-width: Fill(1440px);
-  width: 100%;
-  height: 100%;
-  top: 25px;
-  left: 10px;
+  margin-top: 1%;
 }
 
 // -----JOBCARD--------
 .jobDetails {
   display: flex;
   flex-direction: column;
-  width: 975px;
-  padding-top: 10px;
+  width: 100%;
+  // padding-top: 10px;
   gap: 32px;
 }
 .apply-btn {
@@ -490,7 +427,6 @@ figcaption {
 }
 .jobCardTitle {
   display: flex;
-  width: 835.3px;
   height: Hug(40px);
   justify-content: space-between;
 }
@@ -504,9 +440,8 @@ figcaption {
 }
 
 .cardText {
-  margin-top: 20px;
+  margin-top: 1%;
   position: relative;
-  width: 850px;
   height: Hug(21px);
   display: flex;
   justify-content: space-between;
@@ -517,13 +452,7 @@ figcaption {
   text-align: left;
   color: #5e5873;
 }
-.cardText h4 {
-  width: 391px;
-  height: 21px;
-}
 .cardText h6 {
-  width: 181px;
-  height: 21px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;

@@ -19,7 +19,7 @@ function LoggedInNvabar() {
           <li id="a">
             <NavLink
               to="/logged"
-              className={({isActive}) => (isActive ? `{styles.active}` : '')}
+              className={({isActive}) => (isActive ? 'activeLink' : '')}
             >
               <FaRegCheckCircle />
               Jobs
@@ -27,21 +27,27 @@ function LoggedInNvabar() {
           </li>
 
           <li id="b">
-            <NavLink to='/appliedJobs'>
+            <NavLink to='/appliedJobs'
+            className={({isActive}) => (isActive ? 'activeLink' : '')}
+            >
               <FaRegClock />
               My Application
             </NavLink>
           </li>
 
           <li id="c">
-            <NavLink to='/class'>
+            <NavLink to='/jobOffers'
+            className={({isActive}) => (isActive ? 'activeLink' : '')}
+            >
               <FaBook />
               My Offers
             </NavLink>
           </li>
 
           <li id="d">
-            <NavLink to='/kill'>
+            <NavLink to='/profile'
+            className={({isActive}) => (isActive ? 'activeLink' : '')}
+            >
               <FaRegBookmark />
               My Profile
             </NavLink>

@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Offerspage from "./Layout/offerspage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/appliedJobs',
     element: <AppliedJobs />
+  },
+  {
+    path: '/jobOffers',
+    element: <Offerspage />
   }
 ]
 );

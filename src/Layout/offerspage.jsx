@@ -1,18 +1,16 @@
 import React from 'react'
-import Footer from '../components/footer'
 import LoggedInHeader from '../components/loggedInHeader'
-import AppliedJobDisplay from '../components/appliedJobDisplay'
 import TitleSearch from '../components/titleSearch'
+import Footer from '../components/footer'
 
-function AppliedJobs() {
+function Offerspage() {
   return (
-    <div className="app-wrapper">
+    <div className='app-wrapper'>
       <LoggedInHeader />
       <TitleSearch />
-      <AppliedJobDisplay />
       <Footer />
     </div>
   )
 }
 
-export default AppliedJobs
+export default Offerspage

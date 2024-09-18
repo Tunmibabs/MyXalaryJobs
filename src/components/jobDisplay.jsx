@@ -6,8 +6,6 @@ import JobCard from "./jobCard";
 function JobDisplay() {
   return (
     <section className="jobDisplay">
-      <TitleSearch />
-
       <div className="displayJobs">
         <Sidebar />
         <JobCard />
