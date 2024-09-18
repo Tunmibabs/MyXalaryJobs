@@ -18,7 +18,7 @@
 button {
   border: none;
   cursor: pointer;
-  color: #440F7C;
+  color: #440f7c;
 }
 
 // ---------HEADER------
@@ -165,17 +165,27 @@ figcaption {
   border-radius: 8px;
   background: #3aa14e1a;
   margin-left: 170px;
-  color: #0B6B1D;
+  color: #0b6b1d;
   font-weight: 500;
 }
-.applied-btn{
+.applied-btn {
   width: 142px;
   height: 40px;
   border-radius: 5px;
   padding: 8px 40px;
-  background: #DACFE5;
+  background: #dacfe5;
   font-size: 16px;
   font-weight: 500;
+}
+.interview-btn {
+  width: 241px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 8px 40px;
+  background: #f7d3ea;
+  font-size: 16px;
+  font-weight: 500;
+  color: #d62196;
 }
 .completePBtn {
   width: 186px;
@@ -197,10 +207,10 @@ figcaption {
 .navRight a {
   text-decoration: none;
 }
-.activeLink{
+.activeLink {
   text-decoration: none;
-  border-bottom: 2px solid #D62196;
-  color: #D62196;
+  border-bottom: 2px solid #d62196;
+  color: #d62196;
 }
 .navLeft {
   display: flex;
@@ -257,7 +267,7 @@ figcaption {
   border-radius: 8px;
   border: 1px solid #5e587380;
 }
-.filter-btn{
+.filter-btn {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -319,20 +329,22 @@ figcaption {
   height: 18px;
   margin-left: 9px;
 }
-
+.cardFooter{
+  padding: 20px;
+}
 // ------JOBLIST-------
 .jobList {
   display: flex;
   width: 100%;
   padding-top: 3%;
 }
-.jobList a{
+.jobList a {
   display: flex;
   gap: 12px;
   text-decoration: none;
   padding-bottom: 2%;
   margin-bottom: 10%;
-  border-bottom: 1px solid #5E587380
+  border-bottom: 1px solid #5e587380;
 }
 .cardpp img {
   height: 40px;
@@ -408,7 +420,6 @@ figcaption {
   display: flex;
   flex-direction: column;
   width: 100%;
-  // padding-top: 10px;
   gap: 32px;
 }
 .apply-btn {
@@ -458,4 +469,9 @@ figcaption {
   line-height: 21px;
   text-align: left;
   color: #5e5873;
+}
+
+.description{
+  width: 98%;
+  border: 2px solid red;
 }

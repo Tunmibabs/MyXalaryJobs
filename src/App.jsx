@@ -1,33 +1,40 @@
 import "./app.scss";
-import AppliedJobs from "./Layout/appliedJobs";
-import LoggedInPage from "./Layout/loggedInPage";
-import MainLayout from "./Layout/mainLayout";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Offerspage from "./Layout/offerspage";
+import AppliedJobs from "./pages/appliedJobs";
+import LoggedInPage from "./pages/loggedInPage";
+import Jobs from "./pages/Jobs";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Offerspage from "./pages/offerspage";
+import Applayout from "./Layout/Applayout";
+import Profile from "./pages/Profile";
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element: <MainLayout />,
-    errorElement: <div>404 not Found</div>
+    element: <Applayout />,
+    children: [
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/jobOffers",
+        element: <Offerspage />,
+      },
+      {
+        path: "/appliedJobs",
+        element: <AppliedJobs />,
+      },
+      {
+        path: "/",
+        element: <Jobs />,
+        errorElement: <div>404 not Found</div>,
+      },
+      {
+        path: "/logged",
+        element: <LoggedInPage />,
+      },
+    ],
   },
-  {
-    path: '/logged',
-    element: <LoggedInPage />
-  },
-  {
-    path: '/appliedJobs',
-    element: <AppliedJobs />
-  },
-  {
-    path: '/jobOffers',
-    element: <Offerspage />
-  }
-]
-);
+]);
 
 function App() {
   return <RouterProvider router={router} />;

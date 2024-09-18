@@ -1,18 +1,14 @@
 import React from "react";
-import Footer from "../components/footer";
-import Header from "../components/Header";
 import JobDisplay from "../components/jobDisplay";
 import TitleSearch from "../components/titleSearch";
 
-function MainLayout() {
+function Jobs() {
   return (
-    <div className="app-wrapper">
-      <Header />
+    <div>
       <TitleSearch />
       <JobDisplay />
-      <Footer />
     </div>
   );
 }
 
-export default MainLayout;
+export default Jobs;

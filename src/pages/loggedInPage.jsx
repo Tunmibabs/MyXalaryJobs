@@ -6,11 +6,9 @@ import TitleSearch from "../components/titleSearch";
 
 function LoggedInPage() {
   return (
-    <div className="app-wrapper">
-      <LoggedInHeader />
+    <div>
       <TitleSearch />
       <JobDisplay />
-      <Footer />
     </div>
   );
 }

@@ -1,13 +1,28 @@
 import React from "react";
 import Buttons from "./buttons";
+import { useLocation } from "react-router-dom";
 
 function JobCardHeader() {
+  const location = useLocation();
+  console.log(location);
+
   return (
     <div className="jobCardHeader">
       <div className="jobCardTitle">
         <h2>Senior Product Designer</h2>
 
-        <Buttons className="apply-btn">Appply</Buttons>
+        {location.pathname === "/" && (
+          <Buttons className="apply-btn">Appply</Buttons>
+        )}
+        {location.pathname === "/logged" && (
+          <Buttons className="apply-btn">Appply</Buttons>
+        )}
+        {location.pathname === "/appliedJobs" && (
+          <Buttons className="applied-btn">Applied</Buttons>
+        )}
+        {location.pathname === "/jobOffers" && (
+          <Buttons className="interview-btn">Invited For Interview</Buttons>
+        )}
       </div>
 
       <div className="cardText">
