@@ -7,6 +7,7 @@ import Offerspage from "./pages/offerspage";
 import Applayout from "./Layout/Applayout";
 import Profile from "./pages/Profile";
 import PageNotFound from "./pages/pageNotFound";
+import AuthProvider from "./Context/AuthContext";
 
 const router = createBrowserRouter([
   {
@@ -17,10 +18,10 @@ const router = createBrowserRouter([
         element: <Profile />,
       },
       {
-        path:'/offers',
-        element:<Offerspage />
+        path: "/offers",
+        element: <Offerspage />,
       },
-    
+
       {
         path: "/appliedJobs",
         element: <AppliedJobs />,
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Jobs />,
-        errorElement: <div>404 not Found</div>,
+        // errorElement: <div>404 not Found</div>,
       },
       {
         path: "/logged",
@@ -37,13 +38,17 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path:'*',
-    element: <PageNotFound />
-  }
+    path: "*",
+    element: <PageNotFound />,
+  },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+  );
 }
 
 export default App;
