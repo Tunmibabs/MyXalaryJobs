@@ -9,8 +9,6 @@ import {
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-
-
 function LoggedInNvabar() {
   return (
     <div className="loggedInNav">
@@ -19,7 +17,7 @@ function LoggedInNvabar() {
           <li id="a">
             <NavLink
               to="/logged"
-              className={({isActive}) => (isActive ? 'activeLink' : '')}
+              className={({ isActive }) => (isActive ? "activeLink" : "")}
             >
               <FaRegCheckCircle />
               Jobs
@@ -27,8 +25,9 @@ function LoggedInNvabar() {
           </li>
 
           <li id="b">
-            <NavLink to='/appliedJobs'
-            className={({isActive}) => (isActive ? 'activeLink' : '')}
+            <NavLink
+              to="/appliedJobs"
+              className={({ isActive }) => (isActive ? "activeLink" : "")}
             >
               <FaRegClock />
               My Application
@@ -36,8 +35,9 @@ function LoggedInNvabar() {
           </li>
 
           <li id="c">
-            <NavLink to='/offers'
-            className={({isActive}) => (isActive ? 'activeLink' : '')}
+            <NavLink
+              to="/offers"
+              className={({ isActive }) => (isActive ? "activeLink" : "")}
             >
               <FaBook />
               My Offers
@@ -45,8 +45,9 @@ function LoggedInNvabar() {
           </li>
 
           <li id="d">
-            <NavLink to='/profile'
-            className={({isActive}) => (isActive ? 'activeLink' : '')}
+            <NavLink
+              to="/profile"
+              className={({ isActive }) => (isActive ? "activeLink" : "")}
             >
               <FaRegBookmark />
               My Profile

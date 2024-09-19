@@ -30,11 +30,9 @@ button {
   height: 37px;
   padding: 20px;
   background: #ffffff;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
 }
-.header-loggedin {
-  border-bottom: 1px solid #5e5873;
-}
+
 .navLeft {
   display: flex;
   width: 465px;
@@ -67,6 +65,7 @@ figcaption {
   padding-top: 8px;
   color: #6e6b7b;
 }
+.navLoggedin
 .figImg {
   width: 38px;
   height: 38px;
@@ -129,7 +128,9 @@ figcaption {
   height: 40px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  border-top: 1px solid #5e5873;
+  padding-top: 30px;
 }
 .loggedInNav .loggedinLinks {
   display: flex;
