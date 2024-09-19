@@ -36,7 +36,7 @@ function LoggedInNvabar() {
           </li>
 
           <li id="c">
-            <NavLink to='/jobOffers'
+            <NavLink to='/offers'
             className={({isActive}) => (isActive ? 'activeLink' : '')}
             >
               <FaBook />

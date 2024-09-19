@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 import Buttons from "./buttons";
 import { useAuth } from "../Context/AuthContext";
+import LoggedInNvabar from "./nav";
 
 function Header() {
   const { isLoggedIn, setIsLoggedIn } = useAuth();
@@ -10,13 +11,12 @@ function Header() {
   const logIn = (e) => {
     e.preventDefault();
     setIsLoggedIn(true);
-    console.log("is Logged")
+    console.log("is Logged");
   };
   const logOut = (e) => {
     e.preventDefault();
     setIsLoggedIn(false);
-    console.log("Not Logged")
-
+    console.log("Not Logged");
   };
 
   return (
@@ -41,6 +41,11 @@ function Header() {
           )}
         </div>
       </nav>
+      {isLoggedIn && (
+        <nav className="navLoggedin">
+          <LoggedInNvabar />
+        </nav>
+      )}
     </>
   );
 }

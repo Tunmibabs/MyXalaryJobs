@@ -1,8 +1,8 @@
-import React from 'react'
-import Logo from "../assets/Logo.png"
-import Buttons from './buttons'
-import LoggedInNvabar from './loggedInNvabar'
-import { Link } from 'react-router-dom'
+import React from "react";
+import Logo from "../assets/Logo.png";
+import Buttons from "./buttons";
+import LoggedInNvabar from "./nav";
+import { Link } from "react-router-dom";
 
 function LoggedInHeader() {
   return (
@@ -13,14 +13,16 @@ function LoggedInHeader() {
         </div>
 
         <div className="loggedout">
-          <Link to='/'><Buttons className="logout-btn">Logout</Buttons></Link>
+          <Link to="/">
+            <Buttons className="logout-btn">Logout</Buttons>
+          </Link>
         </div>
       </nav>
-      <nav className='navLoggedin'>
+      <nav className="navLoggedin">
         <LoggedInNvabar />
       </nav>
     </>
-  )
+  );
 }
 
-export default LoggedInHeader
+export default LoggedInHeader;
