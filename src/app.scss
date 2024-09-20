@@ -331,7 +331,8 @@ figcaption {
   margin-left: 9px;
 }
 .cardFooter{
-  padding: 20px;
+  padding: 15px;
+  overflow: hidden;
 }
 // ------JOBLIST-------
 .jobList {
@@ -433,8 +434,9 @@ figcaption {
   color: #ffffff;
 }
 .jobCardHeader {
+  height: 170px;
   padding-left: 17px;
-  padding-bottom: 25px;
+  padding-bottom: 2px;
   border-bottom: 1px solid #5e587380;
 }
 .jobCardTitle {
@@ -474,5 +476,9 @@ figcaption {
 
 .description{
   width: 98%;
-  border: 2px solid red;
+  // border: 2px solid red;
+  padding: 10px;
+}
+.description::-webkit-scrollbar{
+  display: none;
 }
