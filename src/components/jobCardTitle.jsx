@@ -14,9 +14,6 @@ function JobCardHeader() {
         {pathname === "/" && (
           <Buttons className="apply-btn">Appply</Buttons>
         )}
-        {pathname === "/logged" && (
-          <Buttons className="apply-btn">Appply</Buttons>
-        )}
         {pathname === "/appliedJobs" && (
           <Buttons className="applied-btn">Applied</Buttons>
         )}

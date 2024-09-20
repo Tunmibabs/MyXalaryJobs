@@ -4,7 +4,14 @@ import { useState, useEffect, useContext } from "react";
 const AuthContext = React.createContext();
 
 function AuthProvider({ children }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    const storedLoggedIn = localStorage.getItem("isLoggedIn");
+    return storedLoggedIn === "true" ? true : false;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("isLoggedIn", isLoggedIn);
+  }, [isLoggedIn]);
 
   const value = {
     isLoggedIn,

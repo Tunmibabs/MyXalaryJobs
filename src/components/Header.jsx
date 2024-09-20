@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 import Buttons from "./buttons";
@@ -8,15 +8,17 @@ import LoggedInNvabar from "./nav";
 function Header() {
   const { isLoggedIn, setIsLoggedIn } = useAuth();
 
+  useEffect(() => {
+    localStorage.setItem("isLoggedIn", isLoggedIn);
+  }, [isLoggedIn]);
+
   const logIn = (e) => {
     e.preventDefault();
     setIsLoggedIn(true);
-    console.log("is Logged");
   };
   const logOut = (e) => {
     e.preventDefault();
     setIsLoggedIn(false);
-    console.log("Not Logged");
   };
 
   return (

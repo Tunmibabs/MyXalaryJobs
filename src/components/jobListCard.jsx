@@ -12,7 +12,7 @@ function JobListCard({ jobs }) {
           {Array.from({ length: 10 }, (job, index) => (
             <NavLink
             key={index}
-            // to={}
+            to={`${index.toString()}`}
             >
               <div className="cardpp">
                 <img src={Cardpp} />
