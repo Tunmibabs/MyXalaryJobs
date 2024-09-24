@@ -10,7 +10,7 @@ function JobCardHeader() {
       <div className="jobCardTitle">
         <h2>Senior Product Designer</h2>
 
-        {(pathname === "/" || pathname === "/jobs") && (
+        {pathname === "/" && (
           <Buttons className="apply-btn">Appply</Buttons>
         )}
         {pathname === "/appliedJobs" && (
