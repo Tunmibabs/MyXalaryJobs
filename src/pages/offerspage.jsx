@@ -5,7 +5,6 @@ import JobDisplay from '../components/jobDisplay'
 function Offerspage() {
   return (
     <div>
-      <TitleSearch />
       <JobDisplay />
     </div>
   )

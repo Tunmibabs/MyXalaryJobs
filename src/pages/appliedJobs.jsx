@@ -6,7 +6,6 @@ import JobDisplay from '../components/jobDisplay'
 function AppliedJobs() {
   return (
     <div>
-      <TitleSearch />
       <JobDisplay />
     </div>
   )

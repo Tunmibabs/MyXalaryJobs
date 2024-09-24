@@ -7,7 +7,6 @@ import TitleSearch from "../components/titleSearch";
 function LoggedInPage() {
   return (
     <div>
-      <TitleSearch />
       <JobDisplay />
     </div>
   );

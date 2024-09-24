@@ -1,103 +1,45 @@
 import React from "react";
+import ListDescription from "./ListDescription";
+import {
+  aboutCompany,
+  responsibilities,
+  jobTitle,
+  qualifications,
+  mustHaves,
+  benefits,
+} from "./JobDetails";
+import { FaNairaSign } from "react-icons/fa6";
 
 function JobCardDescription() {
   return (
     <div className="description">
-      <div>
-        <h4>Product Designer Job Description</h4>
+      <div className="top">
+        <h5>Product Designer Job Description</h5>
 
-        <h5>Job Overview</h5>
-        <p>
+        <h4>Job Overview</h4>
+        <span>
           ATB Techsoft Solutions Limited, a leading firm in Information
           Technology industry in the metro area. We're pleased to have a 4.0
           Glassdoor rating. We are looking to hire an experienced Product
           Designer to help us keep growing. If you're hard-working and
           dedicated, ATB Techsoft Solutions Limited, is an ideal place to get
           ahead. Apply today!
-        </p>
+        </span>
       </div>
 
-      <div>
-        <h5>Responsibilities for Product Designer</h5>
-        <ul>
-          <li>
-            Create design concepts and drawings to determine the best product
-          </li>
-          <li>
-            Present product ideas to relevant team members for brainstorming
-          </li>
-          <li>
-            Suggest improvements to design and performance to product engineers
-          </li>
-          <li>Employ design concepts into functional prototypes</li>
-          <li>
-            Perform research on product technologies and structures to implement
-            into design concepts
-          </li>
-          <li>
-            Maintain up to date on current industry trends and market conditions
-          </li>
-          <li>
-            Coordinate with designers to ensure accurate communication and
-            efficiency in the design phase
-          </li>
-          <li>
-            Modify and revise existing designs to meet customer expectations
-          </li>
-        </ul>
-      </div>
+      <ListDescription heading={`Responsibilities for ${jobTitle}`} items={responsibilities}/>
 
-      <div>
-        <h5>Qualifications for Product Designer</h5>
-        <ul>
-          <li>Relevant work experience as a product designer is preferred</li>
-          <li>Exceptional verbal and written communication skills</li>
-          <li>Excellent eye for aesthetic design and customer appeal</li>
-          <li>Good understanding of color science and combinations</li>
-          <li>Artistic and innovative flair</li>
-          <li>Excellent attention to detail</li>
-          <li>Meticulous and diligent</li>
-          <li>Strong knowledge of the industry and market trends</li>
-          <li>Able to sit in front of a computer for long hours at a time</li>
-        </ul>
-      </div>
+      <ListDescription heading={`Qualifications for ${jobTitle}`} items={qualifications}/>
 
-      <div>
-        <h5>Must Haves</h5>
-        <ul>
-          <li>Relevant work experience as a product designer is preferred</li>
-          <li>Exceptional verbal and written communication skills</li>
-          <li>Excellent eye for aesthetic design and customer appeal</li>
-          <li>Good understanding of color science and combinations</li>
-          <li>Artistic and innovative flair</li>
-          <li>Excellent attention to detail</li>
-          <li>Meticulous and diligent</li>
-          <li>Strong knowledge of the industry and market trends</li>
-          <li>Able to sit in front of a computer for long hours at a time</li>
-        </ul>
-      </div>
+      <ListDescription heading="Must Haves" items={mustHaves}/>
 
-      <div>
-        <h5>Benefits of working with us</h5>
-        <ul>
-          <li>Relevant work experience as a product designer is preferred</li>
-          <li>Exceptional verbal and written communication skills</li>
-          <li>Excellent eye for aesthetic design and customer appeal</li>
-          <li>Good understanding of color science and combinations</li>
-          <li>Artistic and innovative flair</li>
-          <li>Excellent attention to detail</li>
-          <li>Meticulous and diligent</li>
-          <li>Strong knowledge of the industry and market trends</li>
-          <li>Able to sit in front of a computer for long hours at a time</li>
-        </ul>
-      </div>
+      <ListDescription heading="Benefits of Working With Us" items={benefits}/>
 
-      <h5>Required Education Level: Graduate</h5>
-      <h5>Experience Level: Professional</h5>
-      <h5>Job Type: Remote</h5>
-      <h5>Location: Lagos, NGA</h5>
-      <h5>Salary: </h5>
-
+      <h4 className="others">Required Education Level:<span> Graduate</span></h4>
+      <h4 className="others">Experience Level:<span> Professional</span></h4>
+      <h4 className="others">Job Type:<span> Remote</span></h4>
+      <h4 className="others">Location:<span> Lagos, NGA</span></h4>
+      <h4 className="others">Salary:<span> <FaNairaSign />450,000 - <FaNairaSign />890,000</span></h4>
     </div>
   );
 }

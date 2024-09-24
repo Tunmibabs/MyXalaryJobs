@@ -12,7 +12,8 @@ function JobListCard({ jobs }) {
           {Array.from({ length: 10 }, (job, index) => (
             <NavLink
             key={index}
-            to={`${index.toString()}`}
+            to={`/jobs/${index}`}
+            className={({ isActive }) => (isActive ? "activeJob" : "")}
             >
               <div className="cardpp">
                 <img src={Cardpp} />

@@ -16,7 +16,7 @@ function LoggedInNvabar() {
         <ul className="navRight">
           <li id="a">
             <NavLink
-              to="/" 
+              to="/jobs" 
               className={({ isActive }) => (isActive ? "activeLink" : "")}
             >
               <FaRegCheckCircle />

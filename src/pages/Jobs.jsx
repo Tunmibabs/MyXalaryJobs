@@ -5,7 +5,6 @@ import TitleSearch from "../components/titleSearch";
 function Jobs() {
   return (
     <div>
-      <TitleSearch />
       <JobDisplay />
     </div>
   );
