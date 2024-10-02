@@ -483,7 +483,6 @@ figcaption {
 // -------JOB DESCRIPTION-----
 .description {
   width: 100%;
-  // border: 2px solid red;
   padding: 15px;
   color: #5e5873;
   font-family: Poppins;
@@ -522,6 +521,33 @@ figcaption {
 .descrption-list{
   margin-bottom: 18px;
 }
-.descrption-list ul{
-  list-style: decimal;
+
+
+// ----------PROFILE-----------
+.profile{
+  // width: 100%;
+  height: 1913px;
+  border: 2px solid red;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.profile-header{
+  width: 100%;
+  display: flex;
+  gap: 23px;
+}
+.Biodata{
+  width: 32%;
+}
+.info-header{
+  width: 100%;
+  display: flex;
+  gap: 10%;
+}
+.profilePic{
+  width: 100%;
+  display: flex;
+  gap: 23px;
 }

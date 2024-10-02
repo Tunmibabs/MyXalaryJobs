@@ -8,7 +8,7 @@ function ListDescription({ heading, company, items }) {
         <p>{company}</p>
       </div>
 
-      <ul>
+      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
