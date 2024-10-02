@@ -34,31 +34,23 @@ button {
 
 .navLeft {
   display: flex;
-  width: 465px;
   gap: 10px;
-  margin-left: 94px;
 }
 .loggedInNav ul,
 .loggedinLinks ul {
   display: flex;
   width: 600px;
-  gap: 16px;
   float: left;
 }
 figure {
   display: flex;
-  line-height: 12px;
-  width: 110px;
-  gap: 8px;
-  padding-right: 12px;
+  gap: 0.3rem;
 }
 figcaption {
-  width: 63px;
   font-weight: 500;
   font-size: 14px;
   text-align: right;
-  line-height: 21px;
-  padding-top: 8px;
+  padding-top: 0.5rem;
   color: #6e6b7b;
 }
 .navLoggedin .figImg {
@@ -66,8 +58,8 @@ figcaption {
   height: 38px;
 }
 .logo {
-  width: 151px;
-  height: 31px;
+  width: 10rem;
+  height: 2rem;
 }
 .loggedout {
   display: flex;
@@ -77,7 +69,7 @@ figcaption {
   height: Hug(32px);
   cursor: pointer;
   border-radius: 5px;
-  padding: 7px 20px 7px 20px;
+  padding: 7px 20px;
   gap: 10px;
   font-weight: 500;
   font-size: 12px;
@@ -86,15 +78,12 @@ figcaption {
   background: #d62196;
 }
 .logout-btn {
-  width: Hug(82px);
-  height: Hug(32px);
   cursor: pointer;
   border-radius: 5px;
-  padding: 7px 20px 7px 20px;
+  padding: 7px 20px;
   gap: 10px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
   color: #ffffff;
   background: #d62196;
 }
@@ -121,22 +110,19 @@ figcaption {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 1rem;
   border-top: 1px solid #5e5873;
   padding-top: 30px;
 }
 .loggedInNav .loggedinLinks {
   display: flex;
-  // width: 818px;
-  padding: 0px;
   overflow: hidden;
 }
 .loggedinLinks ul {
   display: flex;
   justify-content: space-between;
-  gap: 21px;
+  gap: 2rem;
   width: 100%;
-  height: 40px;
   font-size: 12px;
   overflow: hidden;
   padding: 10px 4px;
@@ -152,7 +138,7 @@ figcaption {
   font-weight: 500;
 }
 .appProfileBtn {
-  width: 144px;
+  // width: 144px;
   height: 37px;
   padding: 8px;
   border-radius: 8px;
@@ -162,8 +148,6 @@ figcaption {
   font-weight: 500;
 }
 .applied-btn {
-  width: 142px;
-  height: 40px;
   border-radius: 5px;
   padding: 8px 40px;
   background: #dacfe5;
@@ -171,8 +155,6 @@ figcaption {
   font-weight: 500;
 }
 .interview-btn {
-  width: 241px;
-  height: 40px;
   border-radius: 5px;
   padding: 8px 40px;
   background: #f7d3ea;
@@ -194,7 +176,7 @@ figcaption {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 34px;
+  height: 3rem;
   color: #5e5873;
 }
 .navRight a {
@@ -208,7 +190,6 @@ figcaption {
 .navLeft {
   display: flex;
   justify-content: space-between;
-  width: 40%;
   font-size: 14px;
   line-height: 21px;
 }
@@ -216,28 +197,27 @@ figcaption {
 .searchFilter {
   display: flex;
   width: 100%;
-  height: Fixed(38px);
   justify-content: space-between;
+  box-shadow: 0px 4px 24px 0px #0000000f;
+  border-radius: 8px;
 }
 .filters {
   display: flex;
-  height: 60px;
-  gap: 29px;
+  height: 3rem;
+  gap: 2rem;
   justify-content: space-between;
   font-size: 12px;
   line-height: 18px;
 }
 #numberDropdown {
-  width: 8%;
-  height: 38px;
+  height: 2.5rem;
   border: 1px solid #5e587380;
   padding: 10px;
   justify-content: space-between;
   border-radius: 8px;
 }
 #allDropdown {
-  width: 10%;
-  height: 38px;
+  height: 2.5rem;
   justify-content: space-between;
   padding: 10px;
   border: 1px solid #5e587380;
@@ -245,8 +225,7 @@ figcaption {
 }
 #timeDropdown {
   border: 1px solid #5e587380;
-  width: 16%;
-  height: 38px;
+  height: 2.5rem;
   border-radius: 8px;
   justify-content: space-between;
   padding: 6px;
@@ -282,39 +261,26 @@ figcaption {
 .footer {
   display: flex;
   justify-content: space-between;
-  max-width: 1240px;
-  width: 98%;
+  max-width: 1440px;
+  width: 100%;
   border-radius: 9px;
-  height: Hug(64px);
   margin: 0 auto;
-  top: 1445.83px;
-  padding: 20px 10px;
+  padding: 1rem 1.5rem;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   color: #ffffff;
   background: #440f7c;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .copyright {
-  width: Hug(212px);
-  height: Hug(24px);
-  gap: 17px;
   display: flex;
   justify-content: space-between;
 }
 .bottom-links {
   display: flex;
   justify-content: space-between;
-  width: Hug(210px);
-  height: Hug(24px);
-  gap: 17px;
-}
-.menu-links {
-  width: Hug(123px);
-  height: Hug(18px);
-  gap: 17px;
 }
 .menu-icons {
   width: 18px;
@@ -329,22 +295,19 @@ figcaption {
 // ------JOBLIST-------
 .jobList {
   display: flex;
-  width: 100%;
-  padding-top: 3%;
+  padding-top: 0.5rem;
 }
 .activeJob {
   background: #dacfe5;
 }
 .jobList a {
   display: flex;
-  gap: 12px;
+  gap: 0.5rem;
   text-decoration: none;
-  // padding-bottom: 2%;
-  // margin-bottom: 10%;
   border-bottom: 1px solid #5e587380;
 }
 .cardpp img {
-  height: 40px;
+  height: 2.5rem;
   border-radius: 32px;
   padding: 7px;
 }
@@ -380,7 +343,6 @@ figcaption {
 }
 .jobloc span {
   display: flex;
-  height: 15px;
   border-radius: 4px;
   padding: 3px 2px 4px 5px;
   gap: 2px;
@@ -393,12 +355,10 @@ figcaption {
   text-align: left;
   color: #d62196;
 }
-#locIcon {
-  width: 8px;
-  height: 8px;
-  top: 0.5px;
-  margin-top: 3.5px;
-}
+// #locIcon {
+//   // top: 0.5px;
+//   // margin-top: 3.5px;
+// }
 
 // -----JOB DISPLAY-----
 .jobDisplay {
@@ -407,6 +367,8 @@ figcaption {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  box-shadow: 0px 4px 24px 0px #0000000f;
+  border-radius: 8px;
 }
 .side-bar {
   width: 28%;
@@ -421,26 +383,21 @@ figcaption {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 32px;
 }
 .apply-btn {
-  width: Hug(127px);
-  height: Hug(40px);
   border-radius: 5px;
-  padding: 8px 40px 8px 40px;
-  gap: 10px;
+  padding: 8px 40px;
   background: #440f7c;
   color: #ffffff;
 }
 .jobCardHeader {
-  height: 170px;
-  padding-left: 17px;
-  padding-bottom: 2px;
+  height: 25%;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #5e587380;
 }
 .jobCardTitle {
   display: flex;
-  height: Hug(40px);
   justify-content: space-between;
 }
 .jobCardTitle h2 {
@@ -455,7 +412,6 @@ figcaption {
 .cardText {
   margin-top: 1%;
   position: relative;
-  height: Hug(21px);
   display: flex;
   justify-content: space-between;
   font-family: Poppins;
@@ -475,7 +431,7 @@ figcaption {
 // -------JOB DESCRIPTION-----
 .description {
   width: 100%;
-  padding: 15px;
+  padding: 1rem;
   color: #5e5873;
   font-family: Poppins;
   font-size: 13px;
@@ -517,9 +473,7 @@ figcaption {
 // ----------PROFILE-----------
 .Editbtn {
   display: flex;
-  width: Hug (53px) px;
-  height: Hug (20px) px;
-  gap: 2px;
+  gap: 0.2rem;
   color: #d62196;
   border: none;
   background: none;
@@ -529,8 +483,8 @@ figcaption {
   line-height: 18px;
 }
 .Editbtn img {
-  width: 18px;
-  height: 18px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .profile-header {
@@ -559,6 +513,12 @@ figcaption {
 }
 .profile-header > div:nth-child(5) {
   grid-column: span 6;
+}
+.profile-header > div:nth-child(6) {
+  grid-column: span 3;
+}
+.profile-header > div:nth-child(7) {
+  grid-column: span 3;
 }
 .info-header {
   display: flex;
@@ -657,17 +617,71 @@ figcaption {
 .exp {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
 }
 .exp h3 {
   display: flex;
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
+  gap: 0.9rem;
+  line-height: 28px;
 }
-.exp span{
+.exp span {
   display: flex;
   font-size: 11px;
+  gap: 1rem;
 }
-.exp p{
+.exp p {
   font-size: 10px;
+}
+.exp ul {
+  list-style: disc;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.education h3 {
+  margin-top: 0.8rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+.education h5 {
+  font-size: 11px;
+  font-weight: 400;
+}
+.education span {
+  font-size: 10px;
+}
+.docs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.docs div {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  line-height: 28px;
+}
+.docs h3 {
+  background: #ea4335;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0.2rem 0.3rem;
+  border-radius: 2px;
+}
+.docs h5{
+  font-size: 12px;
+  font-weight: 500;
+}
+.docs a{
+  color: #D62196;
+  font-size: 11px;
+  text-decoration: none;
 }
