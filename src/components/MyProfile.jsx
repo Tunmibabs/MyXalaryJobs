@@ -2,6 +2,8 @@ import React from 'react'
 import PersonalInformation from './PersonalInformation'
 import BioData from './BioData'
 import Competencies from './Competencies'
+import AboutMe from './AboutMe'
+import Experience from './Experience'
 
 function MyProfile() {
   return (
@@ -12,6 +14,8 @@ function MyProfile() {
             <PersonalInformation />
             <BioData />
             <Competencies />
+            <AboutMe />
+            <Experience />
         </div>
     </div>
   )

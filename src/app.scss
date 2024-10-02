@@ -27,7 +27,6 @@ button {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 37px;
   padding: 20px;
   background: #ffffff;
   margin-bottom: 15px;
@@ -36,7 +35,6 @@ button {
 .navLeft {
   display: flex;
   width: 465px;
-  height: 38px;
   gap: 10px;
   margin-left: 94px;
 }
@@ -44,7 +42,6 @@ button {
 .loggedinLinks ul {
   display: flex;
   width: 600px;
-  height: Hug(44px);
   gap: 16px;
   float: left;
 }
@@ -52,7 +49,6 @@ figure {
   display: flex;
   line-height: 12px;
   width: 110px;
-  height: 38px;
   gap: 8px;
   padding-right: 12px;
 }
@@ -118,13 +114,11 @@ figcaption {
 }
 .loggedInNav {
   width: 100%;
-  height: 39px;
   display: flex;
   justify-content: space-between;
 }
 .navLoggedin {
   width: 100%;
-  height: 40px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
@@ -134,7 +128,6 @@ figcaption {
 .loggedInNav .loggedinLinks {
   display: flex;
   // width: 818px;
-  height: 30px;
   padding: 0px;
   overflow: hidden;
 }
@@ -219,7 +212,6 @@ figcaption {
   font-size: 14px;
   line-height: 21px;
 }
-
 // ------SEARCH FILTER------
 .searchFilter {
   display: flex;
@@ -512,42 +504,170 @@ figcaption {
   font-weight: 400;
   text-align: left;
 }
-.description .top{
+.description .top {
   margin-bottom: 18px;
 }
-.description .others{
+.description .others {
   margin-bottom: 22px;
 }
-.descrption-list{
+.descrption-list {
   margin-bottom: 18px;
 }
 
-
 // ----------PROFILE-----------
-.profile{
-  // width: 100%;
-  height: 1913px;
-  border: 2px solid red;
-  padding: 2%;
+.Editbtn {
+  display: flex;
+  width: Hug (53px) px;
+  height: Hug (20px) px;
+  gap: 2px;
+  color: #d62196;
+  border: none;
+  background: none;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.Editbtn img {
+  width: 18px;
+  height: 18px;
+}
+
+.profile-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  color: #5e5873;
+  box-shadow: 0px 4px 24px 0px #0000000f;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.profile-header > div {
+  box-shadow: 0px 4px 24px 0px #0000000f;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.profile-header > div:nth-child(1),
+.profile-header > div:nth-child(2),
+.profile-header > div:nth-child(3) {
+  grid-column: span 2;
+}
+.profile-header > div:nth-child(4) {
+  grid-column: span 6;
+}
+.profile-header > div:nth-child(5) {
+  grid-column: span 6;
+}
+.info-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profilePic {
+  width: 100%;
+  justify-content: space-between;
+  padding: 7%;
+}
+.profilePp {
+  width: 12rem;
+  height: 10rem;
+}
+.profilePic figcaption {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
+}
+.profilePic figcaption h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5e5873;
+}
+.profilePic figcaption p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5e5873;
+}
+.profilePic span {
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+}
+.personal-info .section1 {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  margin-top: 1rem;
+  gap: 1rem;
 }
-.profile-header{
-  width: 100%;
+.sec {
   display: flex;
-  gap: 23px;
+  gap: 2rem;
 }
-.Biodata{
-  width: 32%;
+.sec h5 {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #5e5873;
 }
-.info-header{
-  width: 100%;
+.sec p {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #5e5873;
+}
+.compt {
+  margin-top: 1rem;
   display: flex;
-  gap: 10%;
+  flex-direction: column;
+  gap: 2rem;
 }
-.profilePic{
-  width: 100%;
+.compt div {
   display: flex;
-  gap: 23px;
+  gap: 0.3rem;
+}
+.compt h5 {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+}
+.compt span {
+  font-size: 9px;
+  text-align: left;
+  color: #d62196;
+  border: 1px solid#D62196;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  margin: 2px;
+}
+.aboutMe {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.aboutMe p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+.exp {
+  display: flex;
+  flex-direction: column;
+}
+.exp h3 {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.exp span{
+  display: flex;
+  font-size: 11px;
+}
+.exp p{
+  font-size: 10px;
 }

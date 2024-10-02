@@ -7,14 +7,15 @@ import {
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Infoheader from "./Infoheader";
+import profilePic from "../assets/profile-pic.png"
 
 function PersonalInformation() {
   return (
-    <div className="Biodata">
+    <div className="personal-info">
       <Infoheader heading="Personal Information" />
 
       <figure className="profilePic">
-        <img src="" alt="User" />
+        <img src={profilePic} alt="User" className="profilePp"/>
 
         <figcaption>
           <h4>Ronke Bosola</h4>
