@@ -6,9 +6,14 @@ import { useAuth } from "../Context/AuthContext";
 import LoggedInNvabar from "./nav";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaX } from "react-icons/fa6";
-
+import MobileNav from "./MobileNav";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const { isLoggedIn, setIsLoggedIn } = useAuth();
 
@@ -34,9 +39,16 @@ function Header() {
 
         <div className="loggedout">
           {isLoggedIn ? (
-            <Buttons className="logout-btn" onClick={logOut}>
-              Logout
-            </Buttons>
+            <>
+              <Buttons className="logout-btn" onClick={logOut}>
+                Logout
+              </Buttons>
+              {isMenuOpen ? (
+                <FaX className="hamburger" onClick={toggleMenu} />
+              ) : (
+                <GiHamburgerMenu className="hamburger" onClick={toggleMenu} />
+              )}
+            </>
           ) : (
             <>
               <Buttons className="login-btn" onClick={logIn}>
@@ -45,8 +57,6 @@ function Header() {
               <Buttons className="signup-btn">Signup</Buttons>
             </>
           )}
-          <GiHamburgerMenu  className="hamburger" onClick=""/>
-          {/* <FaX /> */}
         </div>
       </nav>
       {isLoggedIn && (
@@ -54,6 +64,7 @@ function Header() {
           <LoggedInNvabar />
         </nav>
       )}
+      {isMenuOpen && <MobileNav />}
     </>
   );
 }
