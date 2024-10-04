@@ -1,11 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 import Buttons from "./buttons";
 import { useAuth } from "../Context/AuthContext";
 import LoggedInNvabar from "./nav";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaX } from "react-icons/fa6";
+
 
 function Header() {
+
   const { isLoggedIn, setIsLoggedIn } = useAuth();
 
   useEffect(() => {
@@ -41,6 +45,8 @@ function Header() {
               <Buttons className="signup-btn">Signup</Buttons>
             </>
           )}
+          <GiHamburgerMenu  className="hamburger" onClick=""/>
+          {/* <FaX /> */}
         </div>
       </nav>
       {isLoggedIn && (

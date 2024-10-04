@@ -10,7 +10,6 @@ import Documents from './Documents'
 function MyProfile() {
   return (
     <div className='profile'>
-        <div>My profile</div>
 
         <div className='profile-header'>
             <PersonalInformation />

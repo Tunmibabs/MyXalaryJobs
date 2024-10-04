@@ -128,17 +128,13 @@ figcaption {
   padding: 10px 4px;
 }
 .profileBtn {
-  width: 130px;
-  height: 37px;
   border-radius: 8px;
   padding: 8px;
-  gap: 10px;
   background: #fc09091a;
   color: #fc0909;
   font-weight: 500;
 }
 .appProfileBtn {
-  // width: 144px;
   height: 37px;
   padding: 8px;
   border-radius: 8px;
@@ -193,6 +189,69 @@ figcaption {
   font-size: 14px;
   line-height: 21px;
 }
+
+@media (max-width: 879px) {
+  .header-loggedout,
+  .header-loggedin {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+    background: #ffffff;
+    margin-bottom: 0.1rem;
+  }
+  .navLeft {
+    display: flex;
+    gap: 0.2rem;
+  }
+  .loggedInNav ul,
+  .loggedinLinks ul {
+    display: flex;
+    width: 100%;
+  }
+  .loggedinLinks ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.9rem;
+    width: 100%;
+    font-size: 11px;
+    overflow: hidden;
+    padding: 1rem 0.4rem;
+  }
+  .completePBtn {
+    width: 9rem;
+    border-radius: 8px;
+    padding: 0;
+    background: #fc0909;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 11px;
+  }
+  .logo {
+    width: 8rem;
+    height: 2rem;
+  }
+  .profileBtn {
+    width: 7rem;
+    font-size: 11px;
+    border-radius: 8px;
+    padding: 0.6rem;
+    background: #fc09091a;
+    color: #fc0909;
+    font-weight: 500;
+  }
+  figure {
+    display: flex;
+    gap: 0.2rem;
+  }
+  figcaption {
+    font-size: 11px;
+    text-align: right;
+    padding-top: 0.5rem;
+    color: #6e6b7b;
+  }
+}
+
 // ------SEARCH FILTER------
 .searchFilter {
   display: flex;
@@ -257,6 +316,7 @@ figcaption {
   background: #dacfe5;
   border-radius: 8px;
 }
+
 // -----FOOTER-----
 .footer {
   display: flex;
@@ -428,6 +488,11 @@ figcaption {
   text-align: left;
   color: #5e5873;
 }
+@media (max-width: 879) {
+  .side-bar {
+    width: 50%;
+  }
+}
 // -------JOB DESCRIPTION-----
 .description {
   width: 100%;
@@ -461,13 +526,13 @@ figcaption {
   text-align: left;
 }
 .description .top {
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 .description .others {
-  margin-bottom: 22px;
+  margin-bottom: 1.2rem;
 }
 .descrption-list {
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 // ----------PROFILE-----------
@@ -676,12 +741,254 @@ figcaption {
   padding: 0.2rem 0.3rem;
   border-radius: 2px;
 }
-.docs h5{
+.docs h5 {
   font-size: 12px;
   font-weight: 500;
 }
-.docs a{
-  color: #D62196;
+.docs a {
+  color: #d62196;
   font-size: 11px;
   text-decoration: none;
+}
+
+
+
+.hamburger{
+  padding-top: 0.7rem;
+  padding-right: 1rem;
+  color: #440F7C;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 989px) {
+  .filters {
+    display: flex;
+    height: 3rem;
+    width: 65%;
+    gap: 0.3rem;
+    justify-content: space-between;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  #roleDropdown {
+    width: 197px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #5e587380;
+  }
+  #timeDropdown {
+    border: 1px solid #5e587380;
+    height: 2.2rem;
+    border-radius: 8px;
+    justify-content: space-between;
+    padding: 3px;
+  }
+  #numberDropdown {
+    height: 2.2rem;
+    border: 1px solid #5e587380;
+    padding: 3px;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+  #allDropdown {
+    height: 2.2rem;
+    justify-content: space-between;
+    padding: 3px;
+    border: 1px solid #5e587380;
+    border-radius: 8px;
+  }
+  .filter-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .reset-filter {
+    width: 85px;
+    height: 2.2rem;
+    padding: 4px;
+    border: 1px solid #440f7c;
+    border-radius: 8px;
+  }
+  .filter-jobs {
+    width: 120px;
+    height: 2.2rem;
+    border: 1px solid #440f7c;
+    background: #dacfe5;
+    border-radius: 8px;
+  }
+
+  .side-bar {
+    width: 45%;
+    padding-right: 1%;
+  }
+  .jobCardHeader {
+    height: 31%;
+  }
+  .jobCardTitle h2 {
+    font-size: 20px;
+  }
+
+  .cardText {
+    font-size: 12px;
+  }
+  .cardText h6 {
+    font-size: 11px;
+  }
+  .interview-btn {
+    font-size: 12px;
+  }
+  .description {
+    font-size: 10px;
+  }
+  .description h4 {
+    font-size: 12px;
+  }
+  .description h5 {
+    font-size: 12px;
+  }
+  .description span {
+    font-size: 10px;
+  }
+  .profile-header > div:nth-child(1),
+  .profile-header > div:nth-child(2) {
+    grid-column: span 3;
+  }
+  .profile-header > div:nth-child(3),
+  .profile-header > div:nth-child(6),
+  .profile-header > div:nth-child(7) {
+    grid-column: span 6;
+  }
+  .compt span {
+    font-size: 9px;
+    text-align: left;
+    color: #d62196;
+    border: 1px solid#D62196;
+    border-radius: 0.3rem;
+    padding: 0.4rem 2.3rem;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 540px) {
+  .navLoggedin {
+    display: none;
+  }
+  .profile-header > div:nth-child(1),
+  .profile-header > div:nth-child(2),
+  .profile-header > div:nth-child(6),
+  .profile-header > div:nth-child(7) {
+    grid-column: span 6;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0;
+    padding: 0;
+  }
+  .copyright {
+    display: flex;
+    gap: 2rem;
+  }
+  .menu-icons {
+    width: 15px;
+    height: 15px;
+  }
+  .compt span {
+    font-size: 9px;
+    text-align: left;
+    color: #d62196;
+    border: 1px solid#D62196;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.2rem;
+    margin: 2px;
+  }
+  .profilePp {
+    width: 6rem;
+    height: 6rem;
+  }
+  .profilePic figcaption {
+    text-align: left;
+    width: 55%;
+  }
+  .profilePic figcaption h4 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #5e5873;
+  }
+  .profilePic figcaption p {
+    font-size: 10px;
+    font-weight: 400;
+    color: #5e5873;
+  }
+  .profilePic span {
+    display: flex;
+    gap: 6px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .compt span {
+    font-size: 6px;
+    text-align: left;
+    color: #d62196;
+    border: 1px solid#D62196;
+    border-radius: 0.3rem;
+  }
+  .docs h3{
+    font-size: 12px;
+  }
+  .docs h5{
+    font-size: 10px;
+  }
+  .exp h3 {
+    font-size: 10px;
+    font-weight: 500;
+    gap: 0.3rem;
+  }
+  .exp span {
+    display: flex;
+    font-size: 9px;
+    gap: 0.3rem;
+  }
+  .exp p {
+    font-size: 8px;
+  }
+  .exp ul {
+    font-size: 10px;
+  }
+  .sec {
+    display: flex;
+    gap: 1rem;
+  }
+  .sec h5 {
+    font-size: 10px;
+  }
+  .sec p {
+    font-size: 9px;
+  }
+  .aboutMe p{
+    font-size: 10px;
+  }
+  .logout-btn{
+    display: none;
+  }
+  .hamburger{
+    display:block;
+  }
+}
+@media (max-width: 540px) {
+  .searchFilter{
+    display: none;
+  }
+  .jobDisplay{
+    width: 1000%;
+  }
+  .jobDetails{
+    display: none;
+  }
 }
