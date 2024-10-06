@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +19,7 @@ button {
   cursor: pointer;
   color: #440f7c;
 }
-li{
+li {
   text-decoration: none;
 }
 
@@ -336,6 +335,7 @@ figcaption {
   background: #440f7c;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  box-shadow: 0px 4px 24px 0px #0000000f;
 }
 .copyright {
   display: flex;
@@ -1091,7 +1091,7 @@ figcaption {
   width: 100%;
 }
 .header-loggedout,
-.header-loggedin{
+.header-loggedin {
   border-bottom: 1px solid #5e5873;
 }
 @media (max-width: 350px) {
@@ -1104,7 +1104,97 @@ figcaption {
     height: 1.3rem;
     width: 6rem;
   }
-  .mobileNav figure{
+  .mobileNav figure {
     width: 30%;
   }
 }
+
+// --------MODAL---------
+.modalBackgraound {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200);
+  // position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // z-index: 0;
+  // z-index: 10;
+}
+.modalX {
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  border-radius: 59px;
+  padding: 0.2rem 0.5rem;
+  font-size: 15px;
+  float: right;
+}
+.Modalheader {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #bdbdc74a;
+}
+.Modalheader h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5e5873;
+}
+.Modalbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1.8rem;
+}
+.loginHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: #5e5873;
+}
+.loginHead h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+.loginHead h5 {
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+.modalForm {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #5e5873;
+}
+.modalForm label {
+  font-size: 16px;
+}
+.modalForm label span {
+  font-size: 16px;
+  color: #FC0909;
+}
+.modalForm input{
+  border: 1px solid #BDBDC7;
+  padding: 0.4rem;
+  width: 28rem;
+  border-radius: 0.3rem;
+}
+.Modalfooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.Modalfooter .login-btn{
+padding: 0.4rem 4rem;
+}
+.Modalfooter .signup-btn{
+  padding: 0.4rem 4rem;
+}
+  

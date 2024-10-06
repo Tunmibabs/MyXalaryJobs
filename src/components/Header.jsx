@@ -7,6 +7,8 @@ import LoggedInNvabar from "./nav";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaX } from "react-icons/fa6";
 import MobileNav from "./MobileNav";
+import LoginModal from "./LoginModal";
+import SignUpModal from "./SignUpModal";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +24,7 @@ function Header() {
   }, [isLoggedIn]);
 
   const logIn = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     setIsLoggedIn(true);
   };
   const logOut = (e) => {
@@ -51,10 +53,8 @@ function Header() {
             </>
           ) : (
             <>
-              <Buttons className="login-btn" onClick={logIn}>
-                Login
-              </Buttons>
-              <Buttons className="signup-btn">Signup</Buttons>
+            <LoginModal logIn={logIn}/>
+            <SignUpModal />
             </>
           )}
         </div>
